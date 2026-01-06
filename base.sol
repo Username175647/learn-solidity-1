@@ -3,7 +3,7 @@ pragma solidity ^0.8.28;
 
 contract Basics {
 
-    string public greetings;
+    string public greetings = "Hello, World!";
 
     function setGreetings(string calldata message) external {
         greetings = message;
