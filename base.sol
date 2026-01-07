@@ -1,8 +1,7 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.28;
 
-contract Basics {
-
+contract Strings {
     string public greetings = "Hello, World!";
     string public name = "John";
     string public surname = "Doe";
@@ -17,5 +16,14 @@ contract Basics {
 
     function getGreetings() public view returns(string memory) {
         return greetings;
+    }
+}
+
+contract Numbers {
+    uint256 public currentYear = 2026;
+    int public myFavNumber = -256;
+
+    function setCounter(uint256 _count) public {
+        currentYear = _count;
     }
 }

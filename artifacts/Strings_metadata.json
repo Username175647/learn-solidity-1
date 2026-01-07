@@ -97,7 +97,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"base.sol": "Basics"
+			"base.sol": "Strings"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -112,11 +112,11 @@
 	},
 	"sources": {
 		"base.sol": {
-			"keccak256": "0xf1ae3c4494a0d84fcbf15700271901c34ba31a52e134dab3a7c86df4151d800f",
+			"keccak256": "0xd38e6a50396ec53e8600a4b7186d3999018b16bfb1b487add16ac7b5d577253d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d9cc140721e3eaf7732bf0d0d16e3019046021e0fe5ccf3050a74c76c87ea501",
-				"dweb:/ipfs/QmdKMoPULKQoSRyxDBtqBiP3byv4KriFSaY7LSjLy9zcac"
+				"bzz-raw://01134dbd449ca5a59a61f070846ab688ac8cab574f50959e82650040984b7283",
+				"dweb:/ipfs/QmXrkp2Kc9PWAQS1tBHdiykjmfGnE8STvdBo3VqJ7THKT4"
 			]
 		}
 	},
