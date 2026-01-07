@@ -1,10 +1,23 @@
 {
 	"compiler": {
-		"version": "0.8.28+commit.7893614a"
+		"version": "0.8.31+commit.fd3a2265"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
+			{
+				"inputs": [],
+				"name": "getFullName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
 			{
 				"inputs": [],
 				"name": "getGreetings",
@@ -32,6 +45,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -42,6 +68,19 @@
 				"name": "setGreetings",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "surname",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -60,7 +99,7 @@
 		"compilationTarget": {
 			"base.sol": "Basics"
 		},
-		"evmVersion": "cancun",
+		"evmVersion": "osaka",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -73,11 +112,11 @@
 	},
 	"sources": {
 		"base.sol": {
-			"keccak256": "0xc2b4902b5a6d7ca3ed5f0ea85538d06550903dc09568ac3cb8c83aa0000adb1b",
+			"keccak256": "0x2da4eb76b3f3e6b78b0cf1ef48f9cc222c13ca55c44611faa79c6639da5938db",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6b2f999b141b7fd07e1b6ea7118890f278a2aa55690c8639f85a4f96a31738c9",
-				"dweb:/ipfs/QmcFfXHgTkxCEYPa1GFQMr1wRL3NE2fv3sosKEn2m772NU"
+				"bzz-raw://ae5702527b21b62f68889f95e58f2faf4dd6ae2daacf6dfc98fab3c4822dd57c",
+				"dweb:/ipfs/QmdmgFnNbKmbRE3GBDHb1Pm8ndZiCwLkvUUZQc2PgUtGGx"
 			]
 		}
 	},
