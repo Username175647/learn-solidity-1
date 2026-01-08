@@ -22,8 +22,35 @@ contract Strings {
 contract Numbers {
     uint256 public currentYear = 2026;
     int public myFavNumber = -256;
+    uint256 public supply = 1_000_000_000_000; 
 
     function setCounter(uint256 _count) public {
         currentYear = _count;
+    }
+    function increment() public {
+        currentYear = currentYear + 1;
+    }
+    function getSupply() public view returns(uint) {
+        return supply;
+    }
+    function burnSupply(uint burnTokenCount) public {
+        supply = supply - burnTokenCount;
+    }
+}
+
+contract Address {
+    address public myAddress;
+
+    function setAddress(address _address) public {
+        myAddress = _address;
+    }
+    function getMyAddress() public view returns(address) {
+        return msg.sender;
+    }
+    function getBalance(address _address) public view returns(uint) {
+        return _address.balance / 1 gwei;
+    }
+    function getAddress() public view returns(address) {
+        return myAddress;
     }
 }

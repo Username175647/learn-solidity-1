@@ -1,10 +1,23 @@
 {
 	"compiler": {
-		"version": "0.8.28+commit.7893614a"
+		"version": "0.8.31+commit.fd3a2265"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "burnTokenCount",
+						"type": "uint256"
+					}
+				],
+				"name": "burnSupply",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
 			{
 				"inputs": [],
 				"name": "currentYear",
@@ -16,6 +29,26 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "increment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -43,6 +76,19 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "supply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -60,7 +106,7 @@
 		"compilationTarget": {
 			"base.sol": "Numbers"
 		},
-		"evmVersion": "cancun",
+		"evmVersion": "osaka",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -73,11 +119,11 @@
 	},
 	"sources": {
 		"base.sol": {
-			"keccak256": "0xd38e6a50396ec53e8600a4b7186d3999018b16bfb1b487add16ac7b5d577253d",
+			"keccak256": "0x75d9d53ad8055e4401b4f7fb752f705c7ec5bc614d3bf1d1484dd7844a610ee2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://01134dbd449ca5a59a61f070846ab688ac8cab574f50959e82650040984b7283",
-				"dweb:/ipfs/QmXrkp2Kc9PWAQS1tBHdiykjmfGnE8STvdBo3VqJ7THKT4"
+				"bzz-raw://d9896f02c2408eaaf1c50d48211a15ca7b491b3e0676904d40158fedc596c530",
+				"dweb:/ipfs/QmczLp9vd8HqQZ8hN9bCQVX81Jpy3M3wvfQMKX3u4czMtZ"
 			]
 		}
 	},
