@@ -53,4 +53,27 @@ contract Address {
     function getAddress() public view returns(address) {
         return myAddress;
     }
+    function sendMoney(address payable _to, uint256 _amount) public {
+        _to.transfer(_amount);
+    }
+    function dep() public payable {
+
+    }
+    function sendMoneyBetter(address payable _to) public payable {
+        _to.transfer(msg.value);
+    }
+}
+
+contract Bool {
+    bool public myBool = true;
+    bool public isUserPoor;
+
+    function amIPoor() public returns (bool) {
+        if (msg.sender.balance >= 90 ether) {
+            isUserPoor = false;
+        } else {
+            isUserPoor = true;
+        }
+        return isUserPoor;
+    }
 }
