@@ -6,59 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "burnTokenCount",
-						"type": "uint256"
-					}
-				],
-				"name": "burnSupply",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
-				"name": "currentYear",
+				"name": "getSkillLevel",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getSupply",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "increment",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myFavNumber",
-				"outputs": [
-					{
-						"internalType": "int256",
-						"name": "",
-						"type": "int256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -68,23 +22,23 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_count",
+						"name": "_skillLevel",
 						"type": "uint256"
 					}
 				],
-				"name": "setCounter",
+				"name": "setSkill",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "supply",
+				"name": "someoneSkills",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "enum Enum.Skills",
 						"name": "",
-						"type": "uint256"
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -104,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"base.sol": "Numbers"
+			"base.sol": "Enum"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},

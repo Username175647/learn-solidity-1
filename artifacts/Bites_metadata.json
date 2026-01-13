@@ -6,26 +6,19 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "amIPoor",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
+						"internalType": "uint8",
+						"name": "_bytesIndex",
+						"type": "uint8"
 					}
 				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "isUserPoor",
+				"name": "getByteByIndex",
 				"outputs": [
 					{
-						"internalType": "bool",
+						"internalType": "bytes1",
 						"name": "",
-						"type": "bool"
+						"type": "bytes1"
 					}
 				],
 				"stateMutability": "view",
@@ -33,12 +26,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "myBool",
+				"name": "myBytes",
 				"outputs": [
 					{
-						"internalType": "bool",
+						"internalType": "bytes8",
 						"name": "",
-						"type": "bool"
+						"type": "bytes8"
 					}
 				],
 				"stateMutability": "view",
@@ -58,7 +51,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"base.sol": "Bool"
+			"base.sol": "Bites"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},

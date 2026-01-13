@@ -77,3 +77,26 @@ contract Bool {
         return isUserPoor;
     }
 }
+
+contract Bites {
+    bytes8 public myBytes = "solidity";
+
+    function getByteByIndex(uint8 _bytesIndex) public view returns(bytes1) {
+        return myBytes[_bytesIndex];
+    }
+}
+
+contract Enum {
+    enum Skills {NOOB, ADVANCED, PRO}
+    Skills public someoneSkills;
+
+    function setSkill(uint256 _skillLevel) public {
+        someoneSkills = Skills(_skillLevel);
+    }
+    function getSkillLevel() public view returns(string memory) {
+        if (someoneSkills == Skills.NOOB) return "noob";
+        if (someoneSkills == Skills.ADVANCED) return "advanced";
+        if (someoneSkills == Skills.PRO) return "pro";
+        return "No level";
+    }
+}
