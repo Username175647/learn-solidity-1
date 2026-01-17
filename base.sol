@@ -100,3 +100,61 @@ contract Enum {
         return "No level";
     }
 }
+
+contract Mapping {
+    mapping (address => uint256) public userBalances;
+
+    function addUserBalance(address _user, uint256 _balance) public {
+        userBalances[_user] = _balance;
+    }
+
+    function getUserBalance(address _userAddress) public view returns(uint256) {
+        return userBalances[_userAddress];
+    }
+
+    function deposit() public payable {
+        userBalances[msg.sender] = userBalances[msg.sender] + msg.value;
+    }
+}
+
+contract Structures { //Object
+    struct UserData {
+        string name;
+        uint256 age;
+        bool isSportsman;
+    }
+
+    UserData public me;
+    function setUserData1() public {
+        me = UserData("Alex",31,false);
+    }
+    function setUserData2() public {
+        me = UserData({
+            name: "Mike",
+            age: 26,
+            isSportsman: true
+        });
+    }
+    function setUserData3() public {
+        me.name = "Ivan";
+        me.age = 50;
+        me.isSportsman = true;
+    }
+
+    mapping(address => UserData) public users;
+
+    function setUserData(string memory _name, uint256 _age, bool _isSportsman) public {
+        users[msg.sender] = UserData(_name,_age,_isSportsman);
+    }
+    function getUsersName(address _userAddress) public view returns(string memory) {
+        return users[_userAddress].name;
+    }
+}
+
+contract Arrs {
+    uint256[] public Arr = [999, 1, 0, 55, 5565354345];
+
+    function addTicketToArr(uint256 _ticketNumber) public {
+        Arr.push(_ticketNumber);
+    }
+}

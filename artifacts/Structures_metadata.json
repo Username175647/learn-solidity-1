@@ -6,39 +6,19 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "dep",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getAddress",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_address",
+						"name": "_userAddress",
 						"type": "address"
 					}
 				],
-				"name": "getBalance",
+				"name": "getUsersName",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -46,72 +26,98 @@
 			},
 			{
 				"inputs": [],
-				"name": "getMyAddress",
+				"name": "me",
 				"outputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myAddress",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address payable",
-						"name": "_to",
-						"type": "address"
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_amount",
+						"name": "age",
 						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isSportsman",
+						"type": "bool"
 					}
 				],
-				"name": "sendMoney",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
-						"internalType": "address payable",
-						"name": "_to",
-						"type": "address"
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_isSportsman",
+						"type": "bool"
 					}
 				],
-				"name": "sendMoneyBetter",
+				"name": "setUserData",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "setUserData1",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "setUserData2",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "setUserData3",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_address",
+						"name": "",
 						"type": "address"
 					}
 				],
-				"name": "setAddress",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "users",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isSportsman",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -128,7 +134,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"base.sol": "Address"
+			"base.sol": "Structures"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},

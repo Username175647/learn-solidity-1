@@ -8,30 +8,61 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint8",
-						"name": "_bytesIndex",
-						"type": "uint8"
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_balance",
+						"type": "uint256"
 					}
 				],
-				"name": "getByteByIndex",
+				"name": "addUserBalance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userAddress",
+						"type": "address"
+					}
+				],
+				"name": "getUserBalance",
 				"outputs": [
 					{
-						"internalType": "bytes1",
+						"internalType": "uint256",
 						"name": "",
-						"type": "bytes1"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "myBytes",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "userBalances",
 				"outputs": [
 					{
-						"internalType": "bytes8",
+						"internalType": "uint256",
 						"name": "",
-						"type": "bytes8"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -51,7 +82,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"base.sol": "Bites"
+			"base.sol": "Mapping"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},

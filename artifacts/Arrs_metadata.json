@@ -8,33 +8,33 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint8",
-						"name": "_bytesIndex",
-						"type": "uint8"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "getByteByIndex",
+				"name": "Arr",
 				"outputs": [
 					{
-						"internalType": "bytes1",
+						"internalType": "uint256",
 						"name": "",
-						"type": "bytes1"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "myBytes",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "bytes8",
-						"name": "",
-						"type": "bytes8"
+						"internalType": "uint256",
+						"name": "_ticketNumber",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"name": "addTicketToArr",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -51,7 +51,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"base.sol": "Bites"
+			"base.sol": "Arrs"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
