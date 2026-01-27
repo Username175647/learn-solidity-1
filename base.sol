@@ -158,3 +158,12 @@ contract Arrs {
         Arr.push(_ticketNumber);
     }
 }
+
+contract Constructor {
+    address public owner;
+    uint256 public correntYear;
+    constructor(uint256 _currentYear) { //Call only once in deploy, init
+        owner = msg.sender;
+        correntYear = _currentYear;
+    }
+}

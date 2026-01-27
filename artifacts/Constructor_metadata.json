@@ -8,37 +8,17 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_user",
-						"type": "address"
-					},
-					{
 						"internalType": "uint256",
-						"name": "_balance",
+						"name": "_currentYear",
 						"type": "uint256"
 					}
 				],
-				"name": "addUserBalance",
-				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
+				"type": "constructor"
 			},
 			{
 				"inputs": [],
-				"name": "deposit",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_userAddress",
-						"type": "address"
-					}
-				],
-				"name": "getUserBalance",
+				"name": "correntYear",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -50,19 +30,13 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
-					}
-				],
-				"name": "userBalances",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -82,7 +56,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"base.sol": "Mapping"
+			"base.sol": "Constructor"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
